@@ -13,7 +13,7 @@ require_once("./includes/functions.php");
 <body id="signin_page">
 	<div id="signreg_form">
 		<form action="<?php _e($_SERVER['REQUEST_URI']); ?>" method="post">
-			<h1><?php print_app_name(); ?></h1>
+			<h1><img src="img/logo.png" alt="<?php print_app_name(); ?>" width="162" height="40"></h1>
 			<h2>Sign in</h2>
 			<div class="clear"></div>
 			<label class="caption">Email</label>
@@ -22,7 +22,7 @@ require_once("./includes/functions.php");
 			<input type="password" class="textbox" name="passwd" id="passwd" value="" />
 			<div class="remember"><input type="checkbox" name="remember" id="remember" />
 				<label for="remember">Stay signed in</label>
-				<span style="float:right"><a href="#">Sign up</a> for a new account.</span>
+				<span style="float:right"><a href="signup.php">Sign up</a> for a new account.</span>
 				<div class="clear"></div>
 			</div>
 			<input type="button" class="button" name="signin" value="Sign in" />

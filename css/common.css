@@ -4,13 +4,26 @@
  */
  
 body {
+	margin:0;
+	padding:0;
+}
+
+body, input {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
 }
 
-input {
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+.deselect {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, input, button, ul, li {
+	margin:0;
+	padding:0;
 }
 
 .clear {
@@ -48,8 +61,7 @@ a:link, a:visited {
 }
 
 #signreg_form h1, #signreg_form h2 {
-	margin:0 0 20px 0;
-	padding:0;
+	margin-bottom:20px;
 	font-size:18px;
 	color:#333;
 }
@@ -104,3 +116,175 @@ a:link, a:visited {
 }
 
 /* </signreg> */
+
+
+/* <page> */
+
+#header {
+	height:40px;
+	padding:20px;
+	background:#F6F6F6 url(../img/logo.png) no-repeat 20px 20px;
+}
+
+#searchbar {
+	float:left;
+	margin:8px 0 12px 230px;
+}
+
+#q {
+	width:290px;
+	height:16px;
+	padding:4px 3px;
+	margin:0;
+	font-size:14px;
+	border:1px solid #CCCCCC;
+	float:left;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+}
+
+.button {
+	height:26px;
+	padding:4px 10px 4px 10px;
+	border:1px solid #CCCCCC;
+	float:left;
+	cursor:pointer;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+
+	background-image: linear-gradient(bottom, rgb(227,227,227) 33%, rgb(238,238,238) 67%, rgb(249,249,249) 84%);
+	background-image: -o-linear-gradient(bottom, rgb(227,227,227) 33%, rgb(238,238,238) 67%, rgb(249,249,249) 84%);
+	background-image: -moz-linear-gradient(bottom, rgb(227,227,227) 33%, rgb(238,238,238) 67%, rgb(249,249,249) 84%);
+	background-image: -webkit-linear-gradient(bottom, rgb(227,227,227) 33%, rgb(238,238,238) 67%, rgb(249,249,249) 84%);
+	background-image: -ms-linear-gradient(bottom, rgb(227,227,227) 33%, rgb(238,238,238) 67%, rgb(249,249,249) 84%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.33, rgb(227,227,227)),
+		color-stop(0.67, rgb(238,238,238)),
+		color-stop(0.84, rgb(249,249,249))
+	);
+}
+
+.button.down {
+	padding:5px 9px 3px 11px;
+	
+	background-image: linear-gradient(bottom, rgb(249,249,249) 33%, rgb(238,238,238) 67%, rgb(227,227,227) 84%);
+	background-image: -o-linear-gradient(bottom, rgb(249,249,249) 33%, rgb(238,238,238) 67%, rgb(227,227,227) 84%);
+	background-image: -moz-linear-gradient(bottom, rgb(249,249,249) 33%, rgb(238,238,238) 67%, rgb(227,227,227) 84%);
+	background-image: -webkit-linear-gradient(bottom, rgb(249,249,249) 33%, rgb(238,238,238) 67%, rgb(227,227,227) 84%);
+	background-image: -ms-linear-gradient(bottom, rgb(249,249,249) 33%, rgb(238,238,238) 67%, rgb(227,227,227) 84%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.33, rgb(249,249,249)),
+		color-stop(0.67, rgb(238,238,238)),
+		color-stop(0.84, rgb(227,227,227))
+	);
+}
+
+#searchbtn {
+	margin-left:-1px;
+	-webkit-border-top-left-radius:0;
+	-webkit-border-bottom-left-radius:0;
+	-moz-border-radius-topleft:0;
+	-moz-border-radius-bottomleft:0;
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+}
+
+#userlog {
+	float:right;
+	margin:10px;
+	color:#DDD;
+	font-size:16px;
+}
+
+#userlog span {
+	font-size:12px;
+	vertical-align:middle;
+	color:#666;
+}
+
+#userlog a:link, #userlog a:visited {
+	font-size:12px;
+	vertical-align:middle;
+	padding:2px 4px;
+}
+
+#userlog a:hover {
+	background:#03F;
+	color:#FFF;
+	text-decoration:none;
+}
+
+/* </page> */
+
+
+/* <sidebar> */
+
+#main {
+	display:table;
+	width:100%;
+}
+
+#sidebar {
+	display:table-cell;
+	vertical-align:top;
+	width:165px;
+	background:url(../img/sidebarbg.png) repeat-y 144px 0;
+	font-size:12px;
+}
+
+#sidebar ul {
+	list-style:none;
+}
+
+#sidebar ul li.active {
+	background:url(../img/sidebaractive.png) repeat-y 145px 0;
+}
+
+#sidebar ul li a {
+	margin-right:15px;
+	height:14px;
+	padding:8px 10px;
+	display:block;
+	text-decoration:none;
+	color:#21759B;
+}
+
+#sidebar ul li a:hover {
+	background:#EAF2FA url(../img/sidebarbg.png) repeat-y 144px 0;
+	color:#333;
+}
+
+#sidebar ul li.active a {
+	background:#797979;
+	color:#FFF;
+	font-weight:bold;
+	text-shadow:#333 1px 1px 1px;
+}
+
+/* </sidebar> */
+
+
+/* <content> */
+
+#content {
+	padding:5px;
+	display:table-cell;
+	vertical-align:top;
+}
+
+#content h1 {
+	font-size:24px;
+	font-weight:normal;
+	color:#666;
+}
+
+/* </content> */
