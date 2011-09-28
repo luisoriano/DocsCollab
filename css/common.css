@@ -101,7 +101,7 @@ a:link, a:visited {
 	margin:0 0 0 5px;
 }
 
-#signreg_form .button {
+#signreg_form .sbutton {
 	display:block;
 	margin:10px 0 0 0;
 }
@@ -111,7 +111,7 @@ a:link, a:visited {
 	color:#999;
 }
 
-#reg_page #signreg_form .button {
+#reg_page #signreg_form .sbutton {
 	margin-top:20px;
 }
 

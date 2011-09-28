@@ -12,7 +12,7 @@ require_once("./includes/functions.php");
 <script type="text/javascript" src="js/common.js"></script>
 </head>
 
-<body>
+<body id="dashboard_page">
 	<div id="header">
 		<div id="searchbar">
 			<form action="<?php _e($_SERVER['REQUEST_URI']); ?>" method="post">

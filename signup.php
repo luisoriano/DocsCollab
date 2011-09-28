@@ -24,7 +24,7 @@ require_once("./includes/functions.php");
 			<input type="password" class="textbox" name="passwd1" id="passwd1" value="" /><span>(Minimum 8 character long)</span>
 			<label class="caption">Re-enter password</label>
 			<input type="password" class="textbox" name="passwd2" id="passwd2" value="" />
-			<input type="button" class="button" name="signup" value="Sign up" />
+			<input type="submit" class="sbutton" name="signup" value="Sign up" />
 		</form>
 	</div>
 </body>
